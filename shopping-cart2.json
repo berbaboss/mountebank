@@ -1,0 +1,36 @@
+{
+  "port": 9000,
+  "protocol": "http",
+  "stubs": [
+    {
+      "predicates": [
+        { "equals": { "method": "POST" } },
+        { "equals": { "path": "/api/v1/order" } },
+        {
+          "equals": {
+            "headers": {
+              "Content-Type": "application/json"
+            }
+          }
+        },
+        {
+          "jsonpath": { "selector": "$.cart[0].product_id" },
+          "caseSensitive": true,
+          "equals": { "body": "1" }
+        } 
+      ],
+      "responses": [
+        {
+          "is": {
+            "statusCode": 200,
+            "headers": { "Content-Type": "application/json" },
+            "body": {
+              "order_id": 8004359121,
+              "total_price": 15.95
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+    "port": 8454,
+    "protocol": "http",
+    "stubs": [
+      {
+        "predicates": [
+          { "equals": { "method": "POST" } },
+          { "equals": { "path": "/orders" } },
+          {
+            "equals": {
+              "headers": {
+                "Content-Type": "application/json"
+              }
+            }
+          },
+          {
+            "jsonpath": { "selector": "$.customerName" },
+            "caseSensitive": true,
+            "equals": { "body": "API test by Rujirot" }
+          } 
+        ],
+        "responses": [
+          {
+            "is": {
+              "statusCode": 201,
+              "headers": { "Content-Type": "application/json" },
+              "body": {
+                "created": true,
+                "orderId": "11111111"
+            }
+            }
+          }
+        ]
+      }
+    ]
+  }

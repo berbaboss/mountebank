@@ -1,0 +1,14 @@
+{"level":"info","message":"[mb:2525] mountebank v2.8.2 now taking orders - point your browser to http://localhost:2525/ for help","timestamp":"2023-06-15T03:53:45.121Z"}
+{"level":"info","message":"[mb:2525] PUT /imposters","timestamp":"2023-06-15T03:53:45.384Z"}
+{"level":"info","message":"[http:8454] Open for business...","timestamp":"2023-06-15T03:53:45.401Z"}
+{"level":"info","message":"[mb:2525] GET /images/book.jpg","timestamp":"2023-06-15T03:53:47.431Z"}
+{"level":"info","message":"[mb:2525] GET /images/book.jpg","timestamp":"2023-06-15T03:53:47.611Z"}
+{"level":"info","message":"[http:8454] ::1:54383 => POST /orders","timestamp":"2023-06-15T03:54:04.894Z"}
+{"level":"info","message":"[http:8454] ::1:54387 => POST /orders","timestamp":"2023-06-15T03:54:25.690Z"}
+{"level":"info","message":"[http:8454] no predicate match, using default response","timestamp":"2023-06-15T03:54:25.692Z"}
+{"level":"info","message":"[http:8454] ::1:54394 => POST /orders","timestamp":"2023-06-15T03:54:34.626Z"}
+{"level":"info","message":"[mb:2525] GET /images/book.jpg","timestamp":"2023-06-15T03:54:49.097Z"}
+{"level":"info","message":"[mb:2525] GET /images/book.jpg","timestamp":"2023-06-15T03:54:55.173Z"}
+{"level":"info","message":"[mb:2525] GET /images/book.jpg","timestamp":"2023-06-15T03:54:56.597Z"}
+{"level":"info","message":"[mb:2525] GET /images/book.jpg","timestamp":"2023-06-15T03:54:58.914Z"}
+{"level":"info","message":"[mb:2525] Adios - see you soon?","timestamp":"2023-06-15T03:55:48.906Z"}

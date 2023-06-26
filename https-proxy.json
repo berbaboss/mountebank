@@ -1,0 +1,32 @@
+{
+    "port": 9009,
+    "protocol": "http",
+    "stubs": [
+        {
+          "responses": [
+             {
+                 "proxy": {
+                    "to": "https://dminer.in.th",
+                     "mode": "proxyOnce",
+                     "predicateGenerators": [
+                        {
+                            "matches": {
+                                "path": true,
+                                "query": true,
+                                "headers": {
+                                    "Content-Type": "application/json"
+                                }
+                            }
+                        },
+                        {
+                            "matches": {
+                                "body": true
+                            }
+                        }
+                    ]
+                 }
+             }
+          ]
+        }
+    ]
+}
